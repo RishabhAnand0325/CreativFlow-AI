@@ -1,0 +1,201 @@
+/* Resize handles for crop box */
+.cropHandle {
+  position: absolute;
+  width: 12px !important;
+  height: 12px !important;
+  background: #149ECA !important;
+  border: 2px solid white !important;
+  border-radius: 2px !important;
+  z-index: 1000;
+}
+
+/* Position specific handles */
+/* .cropHandle:nth-child(1) { /* topLeft */
+  top: -6px !important;
+  left: -6px !important;
+  cursor: nwse-resize !important;
+}
+
+.cropHandle:nth-child(2) { /* top */
+  top: -16px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  cursor: ns-resize !important;
+}
+
+.cropHandle:nth-child(3) { /* topRight */
+  top: -6px !important;
+  right: -6px !important;
+  cursor: nesw-resize !important;
+}
+
+.cropHandle:nth-child(4) { /* right */
+  top: 50% !important;
+  right: -6px !important;
+  transform: translateY(-50%) !important;
+  cursor: ew-resize !important;
+}
+
+.cropHandle:nth-child(5) { /* bottomRight */
+  bottom: -6px !important;
+  right: -6px !important;
+  cursor: nwse-resize !important;
+}
+
+.cropHandle:nth-child(6) { /* bottom */
+  bottom: -6px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  cursor: ns-resize !important;
+}
+
+.cropHandle:nth-child(7) { /* bottomLeft */
+  bottom: -6px !important;
+  left: -6px !important;
+  cursor: nesw-resize !important;
+}
+
+.cropHandle:nth-child(8) { /* left */
+  top: 50% !important;
+  left: -6px !important;
+  transform: translateY(-50%) !important;
+  cursor: ew-resize !important;
+} */
+
+/* Resize handles for overlays */
+.overlayHandle {
+  position: absolute;
+  width: 8px !important;
+  height: 8px !important;
+  background: #00bcd4 !important;
+  border: 1px solid white !important;
+  border-radius: 1px !important;
+  z-index: 1000;
+}
+
+/* Position overlay handles */
+.overlayHandle:nth-child(1) { /* topLeft */
+  top: -4px !important;
+  left: -4px !important;
+  cursor: nwse-resize !important;
+}
+
+.overlayHandle:nth-child(2) { /* top */
+  top: -4px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  cursor: ns-resize !important;
+}
+
+.overlayHandle:nth-child(3) { /* topRight */
+  top: -4px !important;
+  right: -4px !important;
+  cursor: nesw-resize !important;
+}
+
+.overlayHandle:nth-child(4) { /* right */
+  top: 50% !important;
+  right: -4px !important;
+  transform: translateY(-50%) !important;
+  cursor: ew-resize !important;
+}
+
+.overlayHandle:nth-child(5) { /* bottomRight */
+  bottom: -4px !important;
+  right: -4px !important;
+  cursor: nwse-resize !important;
+}
+
+.overlayHandle:nth-child(6) { /* bottom */
+  bottom: -4px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  cursor: ns-resize !important;
+}
+
+.overlayHandle:nth-child(7) { /* bottomLeft */
+  bottom: -4px !important;
+  left: -4px !important;
+  cursor: nesw-resize !important;
+}
+
+.overlayHandle:nth-child(8) { /* left */
+  top: 50% !important;
+  left: -4px !important;
+  transform: translateY(-50%) !important;
+  cursor: ew-resize !important;
+}
+
+/* Crop box styling */
+.cropBox {
+  border: 2px solid #149ECA !important;
+  background-color: rgba(20, 158, 202, 0.1) !important;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5) !important;
+  cursor: move !important;
+}
+
+.cropBox:hover {
+  border-color: #1fb6e4 !important;
+  background-color: rgba(20, 158, 202, 0.2) !important;
+}
+
+/* Overlay styling */
+.textOverlay {
+  border: 1px solid rgba(20, 158, 202, 0.5) !important;
+  background-color: rgba(20, 158, 202, 0.05) !important;
+  cursor: move !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 50px !important;
+  min-height: 30px !important;
+}
+
+.textOverlay:hover {
+  border-color: #149ECA !important;
+  background-color: rgba(20, 158, 202, 0.1) !important;
+}
+
+.logoOverlay {
+  border: 1px solid rgba(20, 158, 202, 0.5) !important;
+  background-color: rgba(20, 158, 202, 0.05) !important;
+  cursor: move !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+}
+
+.logoOverlay:hover {
+  border-color: #149ECA !important;
+  background-color: rgba(20, 158, 202, 0.1) !important;
+}
+
+/* Remove button for overlays */
+.removeButton {
+  position: absolute !important;
+  top: -8px !important;
+  right: -8px !important;
+  width: 20px !important;
+  height: 20px !important;
+  background: #ff4757 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50% !important;
+  font-size: 12px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 1001 !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.textOverlay:hover .removeButton,
+.logoOverlay:hover .removeButton {
+  opacity: 1 !important;
+}
+
+.removeButton:hover {
+  background: #ff3742 !important;
+  transform: scale(1.1) !important;
+}
